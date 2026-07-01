@@ -1,0 +1,41 @@
+#loader {
+    position: fixed;
+    inset: 0;
+    /* background: rgba(255, 255, 255, 0.95); */
+    background-color: rgb(242, 241, 235, 0.95);
+    backdrop-filter: blur(6px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+#loader.ocultar {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.objeto {
+    transform: translateY(0rem);
+    transition: transform 3s ease;
+}
+
+.objeto.ativo {
+    transform: translateY(-22rem);
+}
+
+#conteudo {
+    opacity: 0;
+    transform: translateY(30rem);
+    transition:
+        opacity 1s ease,
+        transform 3s ease;
+}
+
+#conteudo.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}

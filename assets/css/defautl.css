@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;500;700&display=swap');
+
+/* Limpando o CSS do Navegador */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+} 
+ 
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    overflow-x: hidden !important;
+}
+
+body{
+    background-color: #f2f1eb;
+    /* background-image: url("../img/Petalas-Background.svg"), url("../img/Petalas-Background.svg");
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100px, 250px; */
+    margin: 0;
+    /* min-height: 100vh; */
+    position: relative;
+    overflow-x: hidden !important;
+}
+
+
+
+body::before,
+body::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/Petalas-Background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: -1;
+}
+
+body::before {
+    top: -6.5rem;
+    left: -6rem;
+}
+
+body::after {
+    right: -6rem;
+    bottom: -6.5rem;
+    transform: rotate(180deg); /* opcional */
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+/* Início da Estilização */
+:root{
+    font-size: 10px;
+
+    /* Cores Base */
+    --vermelho-escuro: #AE1118;
+    --vermelho-claro: #ED1C24;
+    --preto: #000;
+
+    /* Gradientes da Home */
+    --gradiente1-home: linear-gradient(180deg, #FFFFFF 0%, #E2AAAD 100%);
+    --gradiente2-home: linear-gradient(180deg, #E2AAAD 0%, #DD999C 100%);
+    --gradiente3-home: linear-gradient(180deg, #DC999C 0%, #C1474D 100%);
+    --gradiente4-home: linear-gradient(180deg, #C1474C 0%, #B72C32 100%);
+    --gradiente5-home: linear-gradient(180deg, #B72C32 0%, #AE1118 100%);
+
+    /* Fontes */
+    --Oswald: 'Oswald', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+    --Titillium_Web:'Titillium Web', sans-serif;
+
+    /* --padding-section: 6.25vw; */
+
+    /* Inicial */
+    /* --padding-section: 5vw; */
+
+    /* Ideal - Figma */
+    /* --padding-section: 5vw; */
+}
+
+@media (min-width: 1240) {
+    :root{
+        --padding-section: calc((100vw - 1135px) / 2);  
+    }
+}
+
+.padding__section{
+    padding-left: var(--padding-section);
+    padding-right: var(--padding-section);
+    /* display: none; */
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.div1{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 2rem;
+}
+
+.div2{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: red; */
+    /* margin-left: -10rem; */
+    /* padding: 0rem 1rem; */
+    position: relative;
+    z-index: 2;
+    top: -8rem;
+}
+
+.div3{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* background-color: blue;     */
+    position: relative;
+    z-index: 3;
+    top: -20rem;
+    height: -20rem;
+}
+
+.div4{
+    /* background-color: red;     */
+    width: 100vw;
+    margin-top: -30rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div4-1{
+    position: relative;
+    z-index: 1;
+}
+
+.div4-2{
+    position: relative;
+    z-index: 3;
+    margin-left: -11rem;
+}
+
+.div5{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img1{
+    width: 19.7rem;
+}
+
+.img2{
+    width: 16rem;
+}
+
+.img3{
+    width: 15rem;
+}
+
+.img4{
+    width: 30rem;
+    /* border: 5px solid black; */
+    object-fit: cover;  
+}
+
+.img7{
+    width: 30rem;
+}
