@@ -18,6 +18,10 @@
     pointer-events: none;
 }
 
+#loader-img{
+    width: 19rem;
+}
+
 .objeto {
     transform: translateY(0rem);
     transition: transform 3s ease;
