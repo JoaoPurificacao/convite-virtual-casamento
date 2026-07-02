@@ -29,7 +29,7 @@ body{
 
 
 
-body::before,
+/* body::before,
 body::after {
     content: "";
     position: absolute;
@@ -50,8 +50,9 @@ body::before {
 body::after {
     right: -6rem;
     bottom: -6.5rem;
-    transform: rotate(180deg); /* opcional */
-}
+    transform: rotate(180deg);
+} 
+*/
 
 ul, li, ol {
     list-style: none;
@@ -140,14 +141,14 @@ a {
     /* background-color: blue;     */
     position: relative;
     z-index: 3;
-    top: -20rem;
+    top: -12rem;
     height: -20rem;
 }
 
 .div4{
     /* background-color: red;     */
     width: 100vw;
-    margin-top: -30rem;
+    margin-top: -10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -161,7 +162,7 @@ a {
 .div4-2{
     position: relative;
     z-index: 3;
-    margin-left: -11rem;
+    margin-left: -13rem;
 }
 
 .div5{
@@ -176,15 +177,15 @@ a {
 }
 
 .img2{
-    width: 16rem;
+    width: 14rem;
 }
 
 .img3{
-    width: 15rem;
+    width: 18rem;
 }
 
 .img4{
-    width: 30rem;
+    width: 25rem;
     /* border: 5px solid black; */
     object-fit: cover;  
 }
@@ -194,7 +195,7 @@ a {
 }
 
 .img6{
-    width: 12.7rem;
+    width: 15rem;
 }
 
 .img7{

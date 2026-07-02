@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+@font-face {
+  font-family: 'VeryBerryProRegular';
+  src: url('../fonts/VeryBerryProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #loader {
     position: fixed;
     inset: 0;
@@ -7,10 +17,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     z-index: 9999;
+    color: #273462;
+
+    
 
     opacity: 1;
-    transition: opacity 1s ease;
+    transition: opacity 10s ease;
+}
+
+.font-very{
+    font-family: 'VeryBerryProRegular';
+}
+
+.font-libre{
+    font-family: 'Libre Baskerville';
 }
 
 #loader.ocultar {
@@ -19,24 +41,36 @@
 }
 
 #loader-img{
-    width: 19rem;
+    width: 25rem;
 }
 
 .objeto {
     transform: translateY(0rem);
-    transition: transform 3s ease;
+    transition: transform 10s ease;
+    z-index: -1;
 }
 
 .objeto.ativo {
-    transform: translateY(-22rem);
+    transform: translateY(-24rem);
+}
+
+.comunicacao{
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1.2rem 0rem;
+}
+
+.casal{
+    font-size: 2.7rem;
 }
 
 #conteudo {
     opacity: 0;
     transform: translateY(30rem);
     transition:
-        opacity 1s ease,
-        transform 3s ease;
+        opacity 8s ease,
+        transform 10s ease;
 }
 
 #conteudo.mostrar {

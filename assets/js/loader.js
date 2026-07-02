@@ -10,7 +10,7 @@ window.addEventListener("load", () => {
     // Aguarda um pouco antes de esconder o loader
     setTimeout(() => {
         loader.classList.add("ocultar");
-    }, 1000);
+    }, 10000);
 
     // Remove o loader somente após a animação terminar
     loader.addEventListener("transitionend", () => {
