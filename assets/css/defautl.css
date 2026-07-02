@@ -1,6 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+@font-face {
+  font-family: 'VeryBerryProRegular';
+  src: url('../fonts/VeryBerryProRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-very{
+    font-family: 'VeryBerryProRegular';
+}
+
+.font-libre{
+    font-family: 'Libre Baskerville';
+}
 
 /* Limpando o CSS do Navegador */
 *, *::before, *::after {
@@ -66,38 +80,8 @@ a {
 /* Início da Estilização */
 :root{
     font-size: 10px;
-
-    /* Cores Base */
-    --vermelho-escuro: #AE1118;
-    --vermelho-claro: #ED1C24;
-    --preto: #000;
-
-    /* Gradientes da Home */
-    --gradiente1-home: linear-gradient(180deg, #FFFFFF 0%, #E2AAAD 100%);
-    --gradiente2-home: linear-gradient(180deg, #E2AAAD 0%, #DD999C 100%);
-    --gradiente3-home: linear-gradient(180deg, #DC999C 0%, #C1474D 100%);
-    --gradiente4-home: linear-gradient(180deg, #C1474C 0%, #B72C32 100%);
-    --gradiente5-home: linear-gradient(180deg, #B72C32 0%, #AE1118 100%);
-
-    /* Fontes */
-    --Oswald: 'Oswald', sans-serif;
-    --Poppins: 'Poppins', sans-serif;
-    --Titillium_Web:'Titillium Web', sans-serif;
-
-    /* --padding-section: 6.25vw; */
-
-    /* Inicial */
-    /* --padding-section: 5vw; */
-
-    /* Ideal - Figma */
-    /* --padding-section: 5vw; */
 }
 
-@media (min-width: 1240) {
-    :root{
-        --padding-section: calc((100vw - 1135px) / 2);  
-    }
-}
 
 .padding__section{
     padding-left: var(--padding-section);
@@ -109,8 +93,70 @@ a {
     font-weight: bold;
 }
 
-.div1{
+/* .cabecalho{ */
+    /* background-image: url('../img/background-cabecalho.png'); */
+    /* height: 10vw; */
+    /* max-height: 115px; */
+    /* 951.2 - 73.1  */
+    /*  */
+    /* width: 100vw; */
+    /* object-fit: contain; */
+    /* object-position: bottom; */
+    /* background-repeat: no-repeat; */
+    /* background-size: contain; */
+/* } */
+
+.cabecalho_imagem{
     width: 100vw;
+    height: 8rem;
+}
+
+.rodape{
+    /* display: inline-block; */
+    /* background-color: red; */
+    /* position: relative; */
+    color: #273462;
+    height: 16rem;
+}
+
+.rodape_texto{
+    /* background-color: white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    z-index: 3;
+    font-size: 1.5rem;
+    top: -12rem;
+}
+
+.casal_rodape{
+    font-size: 2.5rem;
+}
+
+.rodape_imagem{
+    width: 100vw;
+    /* height: 10%; */
+    z-index: 1;
+    /* position: relative; */
+    height: 100%;
+}
+
+/* .rodape{ */
+    /* width: 100vw;
+    height: 13vw;
+    max-height: 115px; */
+    /* 951.2 - 73.1  */
+    /*  */
+    /* object-fit: cover; */
+    /* object-position: 5rem; */
+/* } */
+
+
+.div1{
+    /* width: 100vw; */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,7 +166,7 @@ a {
 }
 
 .div2{
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -134,7 +180,7 @@ a {
 }
 
 .div3{
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -147,11 +193,12 @@ a {
 
 .div4{
     /* background-color: red;     */
-    width: 100vw;
+    /* width: 100vw; */
     margin-top: -10rem;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .div4-1{
@@ -166,10 +213,16 @@ a {
 }
 
 .div5{
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.div6{
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
 }
 
 .img1{
@@ -185,7 +238,7 @@ a {
 }
 
 .img4{
-    width: 25rem;
+    width: 35rem;
     /* border: 5px solid black; */
     object-fit: cover;  
 }
@@ -200,4 +253,90 @@ a {
 
 .img7{
     width: 30rem;
+}
+
+
+@media (min-width: 650px) {
+    :root{
+        --padding-section: 5rem;
+    }
+
+    .div3{
+        justify-content: center;
+    }
+
+    .div6{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        justify-content: center;
+    }
+
+
+    .img1{
+    width: 25rem;
+    }
+
+    .img2{
+        width: 20rem;
+    }
+
+    .img3{
+        width: 22.85rem;
+    }
+
+    .img4{
+        width: 44.43rem;
+        /* border: 5px solid black; */
+        /* object-fit: cover;   */
+    }
+
+    .img5{
+        width: 43.03rem;
+    }
+
+    .img6{
+        width: 19.04rem;
+    }
+
+    .img7{
+        width: 38.08rem;
+    }
+}
+
+@media (min-width: 1130px) {
+    :root{
+        --padding-section: 25rem;
+    }
+
+    .div6{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .rodape_texto{
+        /* background-color: white; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        z-index: 3;
+        font-size: 2rem;
+        top: -12rem;
+    }
+
+    .casal_rodape{
+        font-size: 4rem;
+    }
+
+    .rodape_imagem{
+        width: 100vw;
+        /* height: 10%; */
+        z-index: 1;
+        /* position: relative; */
+        height: 20rem;
+    }
 }
