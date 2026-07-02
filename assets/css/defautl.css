@@ -147,6 +147,10 @@ a {
     height: 100%;
 }
 
+.data_rodape, .local_rodape{
+    text-transform: uppercase;
+}
+
 /* .rodape{ */
     /* width: 100vw;
     height: 13vw;
