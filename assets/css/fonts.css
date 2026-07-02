@@ -8,10 +8,11 @@
   font-style: normal;
 }
 
+
 .font-very{
     font-family: 'VeryBerryProRegular';
 }
 
 .font-libre{
-    font-family: 'Libre Baskerville';
+    font-family: 'Libre Baskerville', 'sans-serif';
 }

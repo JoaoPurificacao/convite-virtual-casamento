@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/img/logo.webp"/>
+    <link rel="preload" href="./assets/img/Envelope-Fechado2.webp" as="image">
+    <link rel="preload" href="./assets/fonts/VeryBerryProRegular.ttf" as="font" type="font/ttf" crossorigin>
     <title>Convite Virtual</title>
     <!-- Estilo Padrão -->
     <link rel="stylesheet" href="./assets/css/fonts.css"> 
@@ -14,15 +16,15 @@
     <audio id="bgMusic" loop>
         <source src="./assets/audio/Lin-ManuelMiranda-DosOruguitas.mp3" type="audio/mpeg">
     </audio>
-    <script src="./assets/js/loader.js"></script>
-    <header class="cabecalho">
-        <img class="cabecalho_imagem" src="./assets/img/background-cabecalho.webp" alt="" srcset="" fetchpriority="high">
-    </header>
+    <script src="./assets/js/loader.js" defer></script>
     <div id="loader">
         <p class="font-libre comunicacao">O convidamos com a benção de Deus e de nossos pais, para</p>
         <p class="font-very casal">o nosso casamento</p>
-        <img id="loader-img" class="objeto" src="./assets/img/Envelope-Fechado2.webp" alt="">
+        <img id="loader-img" class="objeto" src="./assets/img/Envelope-Fechado2.webp" alt="" fetchpriority="high">
     </div>
+    <header class="cabecalho">
+        <img class="cabecalho_imagem" src="./assets/img/background-cabecalho.webp" alt="" srcset="">
+    </header>
     <section id="conteudo" class="section">
         <div class="div1">
             <img src="./assets/img/Envelope-Aberto2.webp" alt="" srcset="" class="img1">
