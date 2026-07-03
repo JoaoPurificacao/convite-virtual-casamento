@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/webp" href="./assets/img/logo.webp"/>
+    <link rel="preload" href="./assets/img/Envelope-Fechado2.webp" as="image">
+    <link rel="preload" href="./assets/fonts/VeryBerryProRegular.ttf" as="font" type="font/ttf" crossorigin>
+    <title>Convite Virtual</title>
+    <!-- Estilo Padrão -->
+    <!-- <link rel="stylesheet" href="./assets/css/fonts.css">  -->
+    <!-- <link rel="stylesheet" href="./assets/css/loader.css"> -->
+    <link rel="stylesheet" href="./assets/css/defautl.css">
+</head>
+<body>
+    <audio id="bgMusic" loop>
+        <source src="./assets/audio/Lin-ManuelMiranda-DosOruguitas.mp3" type="audio/mpeg">
+    </audio>
+    <div id="loader">
+        <p class="font-libre comunicacao">O convidamos com a benção de Deus e de nossos pais, para</p>
+        <p class="font-very casal">o nosso casamento</p>
+        <img fetchpriority="high" id="loader-img" class="objeto" src="./assets/img/Envelope-Fechado2.webp" alt="">
+    </div>
+    <header class="cabecalho">
+        <img class="cabecalho_imagem" src="./assets/img/background-cabecalho.webp" alt="" srcset="">
+    </header>
+    <section id="conteudo" class="section">
+        <div class="div1">
+            <img src="./assets/img/Envelope-Aberto2.webp" alt="" srcset="" class="img1">
+        </div>
+        <div class="div2 padding__section">
+            <div>
+                <img src="./assets/img/Foto-Escudo2.webp" alt="" srcset="" class="img2">
+            </div>
+            <div>
+                <img src="./assets/img/Escudo-Data2.webp" alt="" srcset="" class="img3">
+            </div>
+        </div>
+        <div class="div3">
+            <a href="https://www.danielemiranda.com.br/">
+                <img src="./assets/img/Concha-Detalhes2.webp" alt="" srcset="" class="img4">
+            </a>
+        </div>
+        <div class="div6">
+            <div class="div4">
+                <div class="div4-1">
+                    <a href="https://www.danielemiranda.com.br/#/informacoes-gerais-faq">
+                        <img src="./assets/img/Lajota-Itaparica-2.webp" alt="" srcset="" class="img5">
+                    </a>
+                </div>
+                <div class="div4-2">
+                    <a href=" https://www.danielemiranda.com.br/#/presentes">
+                        <img src="./assets/img/Lista-de-Presentes.webp" alt="" srcset="" class="img6">
+                    </a>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="div5-1">
+                    <img src="./assets/img/Par-Fotos2.webp" alt="" srcset="" class="img7">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape">
+        <img class="rodape_imagem" src="./assets/img/background-rodape3.webp" alt="" srcset="">
+            <div class="rodape_texto ">
+                <p class="font-libre data_rodape">17.01.2027 | 10H</p>
+                <p class="font-very casal_rodape">João Daniel e Laiane</p>
+                <p class="font-libre local_rodape">Itaparica - Bahia</p>
+            </div>
+    </footer>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+        @font-face {
+            font-family: 'VeryBerryProRegular';
+            src: url('./assets/fonts/VeryBerryProRegular.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .font-very{
+            font-family: 'VeryBerryProRegular';
+        }
+
+        .font-libre{
+            font-family: 'Libre Baskerville', 'sans-serif';
+        }
+
+        #loader {
+            position: fixed;
+            inset: 0;
+            background-color: rgb(242, 241, 235, 0.95);
+            backdrop-filter: blur(6px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            z-index: 9999;
+            color: #273462;
+            opacity: 1;
+            transition: opacity 10s ease;
+        }
+        #loader.ocultar {
+            opacity: 0;
+            pointer-events: none;
+        }
+        #loader-img{
+            width: 31.73rem;
+        }
+        .objeto {
+            transform: translateY(0rem);
+            transition: transform 10s ease;
+            z-index: -1;
+        }
+        .objeto.ativo {
+            transform: translateY(-20rem);
+        }
+
+        .comunicacao{
+            font-size: 1.2rem;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 1.2rem 0rem;
+        }
+        .casal{
+            font-size: 2.7rem;
+        }
+        #conteudo {
+            opacity: 0;
+            transform: translateY(30rem);
+            transition:
+                opacity 8s ease,
+                transform 10s ease;
+        }
+        #conteudo.mostrar {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <script src="./assets/js/loader.js" defer></script>
+</body>
+</html>
